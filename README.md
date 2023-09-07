@@ -9,7 +9,7 @@
 
 ## About MTBOOKSTORE Project
 
-This is a website project done by Tran Thi My Tam. This project need Composer and Node.js to run. If you haven't install them, download right now:
+This is a website project done by Tran Thi My Tam. This project need Composer and Node.js to run. If you haven't install them, download and install right now:
 - Download [Composer](https://getcomposer.org/download).
 - Download [Node.js](https://nodejs.org/en/download).
 
