@@ -6,7 +6,7 @@
 
 @section('content')
     <h2 class="text-center text-3xl font-bold pb-4">
-        Trang quản trị đơn hàng
+        Đơn hàng đã giao
     </h2>
 
     <div class="flex flex-col">

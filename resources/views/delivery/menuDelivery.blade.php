@@ -13,7 +13,11 @@
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                     <x-nav-link :href="url('/delivery')">
-                        {{ __('Đơn hàng') }}
+                        {{ __('Đơn hàng đang giao') }}
+                    </x-nav-link>
+
+                    <x-nav-link :href="url('/delivery/progressed-bills')">
+                        {{ __('Đơn hàng đã giao') }}
                     </x-nav-link>
                     
                     {{-- <div class="hidden sm:flex sm:items-center sm:ml-6">
@@ -117,29 +121,16 @@
     <!-- Responsive Navigation Menu -->
     <div :class="{'block': open, 'hidden': ! open}" class="hidden sm:hidden">
         <div class="pt-2 pb-3 space-y-1">
-            <x-responsive-nav-link :href="url('/')">
+            <x-responsive-nav-link :href="url('/delivery')">
                 {{ __('Trang chủ') }}
             </x-responsive-nav-link>
 
-            <x-responsive-nav-link :href=" url('/san-pham') ">
-                {{ __('Sản phẩm') }}
+            <x-responsive-nav-link :href=" url('/delivery') ">
+                {{ __('Đơn hàng đang giao') }}
             </x-responsive-nav-link>
 
-            {{-- <x-responsive-nav-link>
-                <form class="inline-flex h-9 m-auto" role="search" method="GET" action="{{url('/tim-kiem')}}">
-                    <input name="keyword" class="rounded" type="search" placeholder="Tìm kiếm..." aria-label="Search" oninvalid="this.setCustomValidity('Chưa nhập từ khóa')" required>
-                    <button class="btn-outline bg-white hover:text-red-600" type="submit">Tìm</button>
-                </form>
-            </x-responsive-nav-link> --}}
-
-            @foreach ($cates as $c)
-                <x-responsive-nav-link :href=" url('/danh-muc/'.$c->cate_id) ">
-                    {{ $c->cate_name }}
-                </x-responsive-nav-link>
-            @endforeach
-
-            <x-responsive-nav-link :href=" url('/gio-hang') ">
-                {{ __('Giỏ hàng') }}
+            <x-responsive-nav-link :href=" url('/delivery/progressed-bills') ">
+                {{ __('Đơn hàng đã giao') }}
             </x-responsive-nav-link>
         </div>
 

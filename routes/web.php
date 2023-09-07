@@ -117,7 +117,10 @@ Route::get('/detailbill/{bill_id}', [AdminBillsControllers::class, 'getOneBill']
 Route::get('/delivery', function () {
     return view('delivery.homeDelivery');
 })->middleware('auth', 'Admin');
-Route::get('/delivery', [DeliveryBillsControllers::class, 'getAll']);
+
+Route::get('/delivery', [DeliveryBillsControllers::class, 'getProgressingBills']);
+Route::get('/delivery/progressed-bills', [DeliveryBillsControllers::class, 'getProgressedBills']);
+
 Route::get('/delivery/detailbill/{bill_id}', [DeliveryBillsControllers::class, 'getOneBill']);
 
 Route::middleware('auth')->group(function () {

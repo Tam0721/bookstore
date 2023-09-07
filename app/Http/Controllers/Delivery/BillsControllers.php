@@ -11,9 +11,20 @@ Paginator::useTailwind();
 
 class BillsControllers extends Controller
 {
-    public function getAll() {
-        $bills = Bills::orderBy('updated_at', 'desc')->paginate(3);
-        return view('delivery.homeDelivery', ['bills' => $bills]);
+    public function getProgressingBills() {
+        $bills = Bills::orderBy('updated_at', 'asc')
+                        -> where('bill_paystatus', 0)
+                        -> where('bill_status', 0)
+                        -> paginate(3);
+        return view('delivery.bills.list-progressing-bills', ['bills' => $bills]);
+    }
+
+    public function getProgressedBills() {
+        $bills = Bills::orderBy('updated_at', 'desc')
+                        -> where('bill_paystatus', 1)
+                        -> where('bill_status', 1)
+                        -> paginate(3);
+        return view('delivery.bills.list-progressed-bills', ['bills' => $bills]);
     }
 
     public function getOneBill($idBill = 0) {
