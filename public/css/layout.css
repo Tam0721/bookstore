@@ -1,0 +1,49 @@
+body > div > main { 
+    min-height: 500px;
+    /* background: #EEEEEE; */
+}
+
+body > div > main > #innerMain {
+    width: 80%;
+    margin: auto;
+}
+
+.btn-outline {
+    color: #FF1700;
+    background-color: #ffffff;
+    border: 1px solid #FF1700;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 0.375rem;
+    padding: 0.375rem 0.75rem;
+    line-height: 1.5;
+}
+
+.btn-outline:hover,
+.btn-outline:active,
+.btn-outline:focus,
+.btn-outline.active {
+    background: #FF1700;
+    color: #ffffff;
+    border-color: #FF1700;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+#description > h1,
+#description > h2,
+#description > h3,
+#description > h4,
+#description > h5,
+#description > h6,
+#description > b {
+    font-weight: bold;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+#description > p {
+    line-height: 2rem;
+}
