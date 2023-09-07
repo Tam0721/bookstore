@@ -12,8 +12,8 @@
 This is a website project done by Tran Thi My Tam.
 
 ## How to install for developer?
-1. After cloning project from GitHub, run "composer install" to generate optimized autoload files
-2. Run "npm install" to install node modules and then run "npm run dev" to compile CSS / JavaScript for development and recompile on change.
+1. After cloning project from GitHub, run "composer install" to generate optimized autoload files.
+2. Run "npm install" to install node modules and then run "npm run dev" to compile CSS/JS for development and recompile on change.
 3. The last step is to run "php artisan serve" to run the project on localhost.
 
 ## About Laravel
