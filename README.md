@@ -7,6 +7,15 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+## About MTBOOKSTORE Project
+
+This is a website project done by Tran Thi My Tam.
+
+## How to install for developer?
+1. After cloning project from GitHub, run "composer install" to generate optimized autoload files
+2. Run "npm install" to install node modules and then run "npm run dev" to compile CSS / JavaScript for development and recompile on change.
+3. The last step is to run "php artisan serve" to run the project on localhost.
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
