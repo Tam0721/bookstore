@@ -173,14 +173,14 @@
                     $count = count(session('cart'));
                 @endphp
                 <x-responsive-nav-link :href=" url('/gio-hang') ">
-                    {{ __('Giỏ hàng'.$count) }}
+                    {{ __('Giỏ hàng ('.$count.')') }}
                 </x-responsive-nav-link>
             @else
                 @php
                     $count = 0;
                 @endphp
                 <x-responsive-nav-link :href=" url('/gio-hang') ">
-                    {{ __('Giỏ hàng'.$count) }}
+                    {{ __('Giỏ hàng ('.$count.')') }}
                 </x-responsive-nav-link>
             @endif
 
